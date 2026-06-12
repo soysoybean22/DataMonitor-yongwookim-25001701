@@ -26,7 +26,7 @@ $env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
 
 # 애플리케이션 실행 (메인 클래스 직접 실행)
 .\gradlew run   # run task 미설정 시 아래 방법 사용
-.\gradlew build && java -cp build\classes\java\main org.example.DataMonitor
+.\gradlew build && java "-Dfile.encoding=UTF-8" -cp build\classes\java\main org.example.DataMonitor
 
 # 클린 빌드
 .\gradlew clean build

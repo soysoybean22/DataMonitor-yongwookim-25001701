@@ -20,7 +20,7 @@ $env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
 ### 3. 실행
 
 ```powershell
-java -Dfile.encoding=UTF-8 -cp build\classes\java\main org.example.DataMonitor
+java "-Dfile.encoding=UTF-8" -cp build\classes\java\main org.example.DataMonitor
 ```
 
 종료: `Ctrl+C`
